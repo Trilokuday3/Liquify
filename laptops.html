@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-image: url('laptop_background.jpg'); /* Set custom background image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            font-family: 'Arial', sans-serif; /* Use Arial font */
+            color: #000000; /* Set text color to black */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .container {
+            max-width: 800px; /* Set maximum width for content */
+            margin: auto; /* Center align content */
+            text-align: center; /* Center align text */
+            padding-top: 100px; /* Add space at the top */
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #79a0ef; /* Dark blue background color */
+            z-index: 1000; /* Ensure header appears on top of other elements */
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .navigation-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .navigation {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+
+        .navigation {
+            display: flex;
+            justify-content: center; /* Center align navigation links */
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navigation a {
+            color: #ffffff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .navigation a:hover {
+            color: #cccccc;
+        }
+
+        .button {
+            background-color: #4CAF50; /* Green background color */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        .product {
+            border: 2px solid white; /* White border around product */
+            padding: 20px; /* Add padding to product */
+            margin-bottom: 20px; /* Add space between products */
+        }
+
+        .product img {
+            max-width: 100%; /* Ensure product images don't exceed container width */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Add space between image and product title */
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000; /* Set product title color to black */
+        }
+
+        .product-button {
+            background-color: #4CAF50; /* Green background color */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .product-button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <div class="header">
+            <a href="#" class="logo">Liquify</a>
+            <div class="navigation-container">
+                <ul class="navigation">
+                    <li><a href="#" class="text-gray-200 hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="text-gray-200 hover:text-gray-300">Products</a></li>
+                    <li><a href="#" class="text-gray-200 hover:text-gray-300">Reviews</a></li>
+                    <li><a href="#" class="text-gray-200 hover:text-gray-300">About Us</a></li>
+                    <li><a href="#" class="text-gray-200 hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <h1 class="text-4xl font-bold mb-8">Find your product by answering questions</h1>
+
+        <!-- Option to choose laptops -->
+        <div class="mb-12">
+            <p class="text-2xl font-semibold mb-4">Select Your Perfect Laptop</p>
+            <a href="laptop_questions.html" class="product-button">Proceed to Questions</a>
+        </div>
+
+        <!-- Product options -->
+        <div class="text-center">
+            <a href="samsung_galaxy_book_pro_details.html" class="product">
+                <img src="Samsung Galaxy Book4.jpeg" alt="Samsung Galaxy Book4 Pro">
+                <p class="product-title">Samsung Galaxy Book4 Pro</p>
+            </a>
+            <a href="laptop2_details.html" class="product">
+                <img src="Samsung Galaxy Book4 Pro.webp" alt="Samsung Galaxy Book4">
+                <p class="product-title">Samsung Galaxy Book4</p>
+            </a>
+            <!-- Add more product options as needed -->
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS styles */
+        .hidden {
+            display: none; /* Hide elements with the 'hidden' class */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Laptop Questions</h1>
+        <div id="question1" class="mb-8">
+            <p class="text-lg text-gray-700">Question 1: What is your preferred brand?</p>
+            <!-- Add options for the question -->
+            <div class="mt-2">
+                <label class="inline-flex items-center">
+                    <input type="radio" class="form-radio" name="brand" value="Apple">
+                    <span class="ml-2">Apple</span>
+                </label>
+                <label class="inline-flex items-center ml-6">
+                    <input type="radio" class="form-radio" name="brand" value="Dell">
+                    <span class="ml-2">Dell</span>
+                </label>
+                <!-- Add more options as needed -->
+            </div>
+            <button onclick="showNextQuestion('question2')" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Next</button>
+        </div>
+        <div id="question2" class="hidden">
+            <p class="text-lg text-gray-700">Question 2: What is your preferred screen size?</p>
+            <!-- Add options for the question -->
+            <div class="mt-2">
+                <label class="inline-flex items-center">
+                    <input type="radio" class="form-radio" name="screenSize" value="13-inch">
+                    <span class="ml-2">13-inch</span>
+                </label>
+                <label class="inline-flex items-center ml-6">
+                    <input type="radio" class="form-radio" name="screenSize" value="15-inch">
+                    <span class="ml-2">15-inch</span>
+                </label>
+                <!-- Add more options as needed -->
+            </div>
+            <button onclick="showNextQuestion('question3')" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Next</button>
+        </div>
+        <div id="question3" class="hidden">
+            <!-- Add more questions as needed -->
+            <p class="text-lg text-gray-700">Question 3: What is your preferred processor?</p>
+            <!-- Add options for the question -->
+            <div class="mt-2">
+                <label class="inline-flex items-center">
+                    <input type="radio" class="form-radio" name="processor" value="Intel">
+                    <span class="ml-2">Intel</span>
+                </label>
+                <label class="inline-flex items-center ml-6">
+                    <input type="radio" class="form-radio" name="processor" value="AMD">
+                    <span class="ml-2">AMD</span>
+                </label>
+                <!-- Add more options as needed -->
+            </div>
+            <button onclick="submitForm()" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the next question
+        function showNextQuestion(questionId) {
+            document.getElementById(questionId).classList.remove('hidden'); // Show the next question
+            window.scrollTo(0,document.body.scrollHeight); // Scroll to the bottom of the page
+        }
+
+        // Function to submit the form (you can handle the form submission logic here)
+        function submitForm() {
+            // Retrieve the selected options and process them as needed
+            var brand = document.querySelector('input[name="brand"]:checked').value;
+            var screenSize = document.querySelector('input[name="screenSize"]:checked').value;
+            var processor = document.querySelector('input[name="processor"]:checked').value;
+
+            // Example: Display the selected options
+            alert("Your preferences:\nBrand: " + brand + "\nScreen Size: " + screenSize + "\nProcessor: " + processor);
+        }
+    </script>
+</body>
+
+</html>

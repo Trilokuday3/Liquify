@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS for styling */
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .search-input {
+            width: 70%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+
+        .search-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .search-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-3xl text-center font-bold text-gray-800 mt-8">Search for Products</h1>
+        <div class="search-box mt-8">
+            <input type="text" class="search-input rounded-l-lg" placeholder="Enter product name...">
+            <button class="search-btn rounded-r-lg">Search</button>
+        </div>
+        <div class="mt-10">
+            <h2 class="text-xl font-semibold mb-4">Popular Categories</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <a href="#" class="bg-gray-100 p-4 rounded-lg flex items-center justify-center hover:bg-gray-200">
+                    <img src="electronics.jpg" alt="Electronics" class="w-24 h-24">
+                    <span class="ml-4 text-gray-800 font-semibold">Electronics</span>
+                </a>
+                <!-- Add similar blocks for other categories -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
