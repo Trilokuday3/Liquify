@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Options</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-image: url('1img.jpeg'); /* Set the background image */
+            background-size: 100% 200%; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            background-color: rgba(255, 255, 255, 0.1); /* Set background color with 30% transparency */
+        }
+
+        .container {
+            max-width: 1200px; /* Set maximum width for content */
+            margin: auto; /* Center align content */
+        }
+
+        .grid {
+            justify-items: center; /* Center align grid items horizontally */
+        }
+
+        .group:hover .overlay {
+            opacity: 1; /* Show overlay on hover */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease; /* Smooth transition */
+            border-radius: 0.5rem; /* Rounded corners */
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff; /* White text */
+            text-align: center;
+            font-size: 1.25rem; /* Larger font size */
+            font-weight: 600; /* Bold font weight */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto mt-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Choose an Electronic Device</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- Mobiles -->
+            <a href="mobiles.html" class="group block relative p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <img src="Samsung_Mobile.webp" alt="Mobiles" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="overlay">
+                    <span class="overlay-text">Mobiles</span>
+                </div>
+            </a>
+            <!-- Laptops -->
+            <a href="laptops.html" class="group block relative p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <img src="samsunglaptop.jpg" alt="Laptops" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="overlay">
+                    <span class="overlay-text">Laptops</span>
+                </div>
+            </a>
+            <!-- Tablets -->
+            <a href="tablets.html" class="group block relative p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <img src="samsung_tablet.webp" alt="Tablets" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="overlay">
+                    <span class="overlay-text">Tablets</span>
+                </div>
+            </a>
+            <!-- Cameras -->
+            <a href="cameras.html" class="group block relative p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <img src="camera.jpeg" alt="Cameras" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="overlay">
+                    <span class="overlay-text">Cameras</span>
+                </div>
+            </a>
+            <!-- Power Banks -->
+            <a href="powerbanks.html" class="group block relative p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <img src="powerbank.jpeg" alt="Power Banks" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="overlay">
+                    <span class="overlay-text">Power Banks</span>
+                </div>
+            </a>
+            <!-- Camera Lenses -->
+            <a href="cameralenses.html" class="group block relative p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <img src="thcamera_lens.jpeg" alt="Camera Lenses" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="overlay">
+                    <span class="overlay-text">Camera Lenses</span>
+                </div>
+            </a>
+            <!-- Drones -->
+            <a href="drones.html" class="group block relative p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <img src="drone.webp" alt="Drones" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="overlay">
+                    <span class="overlay-text">Drones</span>
+                </div>
+            </a>
+            <!-- Add more options here -->
+        </div>
+    </div>
+</body>
+
+</html>
