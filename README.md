@@ -14,3 +14,25 @@ What sets Liquify apart is its integration of AI-generated videos for each produ
 - Interactive Questionnaire
 
 ## Implementation
+
+Main Web Page and User Authentication:
+
+- Designed a responsive homepage with navigation options like "Get Started" and sections for product reviews and contact information.
+
+Product Segment Selection Page:
+
+- Created a page for users to select a product category (e.g., Laptops, Smartphones) using an interactive UI.
+
+User Preference Questionnaire:
+
+- Developed a form to collect user preferences (e.g., budget, brand, usage).
+- Implemented real-time validation and stored user responses in the database.
+
+Recommendation System:
+- Designed a recommendation engine using content-based filtering to suggest products based on user inputs.
+- Displayed recommendations dynamically with product details and filtering options.
+
+AI-Generated Product Videos:
+
+- Generated detailed product videos using AI platforms like Synthesia or DeepBrain AI.
+- Embedded videos on the recommendation results page for user insights
